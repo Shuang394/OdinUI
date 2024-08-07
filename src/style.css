@@ -1,0 +1,93 @@
+.dropdownContent > div{
+    display: none;
+}
+
+.dropdownContent > .active{
+    display: block;
+    border: 1px solid black;
+    flex: 1 1 0.2;
+    width: 100%;
+}
+
+
+.dropdownContent{
+    display:flex;
+    flex-direction: column;
+    height:20%;
+    width:15%;
+    justify-content: start;
+    align-items: center;
+}
+
+#dropdown{
+    height: 50%;
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+    flex-direction: column;
+}
+
+#dropdown > h1{
+    margin: 0px;
+}
+
+body{
+    padding: 0px;
+    height: 100vh;
+    margin:0px;
+}
+
+#carousell{
+    background-color: black;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+
+}
+
+.carousell_text{
+    background-color: white;
+    justify-self: flex-start;
+    color: black;
+    text-align: center;
+}
+
+.image_slide{
+    display:flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    width: 100%;
+    height: 80%;
+}
+
+
+.slide{
+    display: none;
+}
+
+.slide.active_image{
+    display: block;
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+.carousel_button{
+    position:absolute;
+    height:10%;
+    width:auto;
+    align-self: center;
+}
+
+.left_button{
+    left: 15rem;
+}
+
+.right_button{
+    right: 15rem;
+}
